@@ -7,7 +7,9 @@
 	let xWinsCounter = 0;
 	let oWinsCounter = 0;
 	let drawCounter = 0;
-	let turn = 'X';
+	const turns = ['X', 'O'];
+	const timestamp = Date.now();
+	let turn = turns[timestamp % 2];
 	const winCombinations = [
 		//rows
 		[0, 1, 2],
